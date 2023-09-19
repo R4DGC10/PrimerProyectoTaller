@@ -10,6 +10,7 @@ def abrir_html():
 abrir_html()
 
 #Formulas
+
 #Modelo de Depreciacion por Linea Recta
 def LineaRecta(B,VS,n):
     Lr = (B-VS)/n
@@ -23,6 +24,14 @@ def LineaRectaVL(Lr, VS, n):
         print("Valor en Libros ",i," = ",VL)
         i = i + 1
 
+def Sumadigitos(n, B, VS):
+  PrimeraEtapa=n*(n+1)/2
+  while n>=1:
+    SegundaEtapa = n/PrimeraEtapa
+    n=n-1
+    Aplicar_Formula= SegundaEtapa*(B-VS)
+  return Aplicar_Formula
+    
 
 
 #Formar Tablas con DataFrame! 
